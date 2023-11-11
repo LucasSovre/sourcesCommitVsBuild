@@ -1,0 +1,355 @@
+Script started on Sat Nov 11 17:39:02 2023
+
+[?1034h(default) %m%# docker container run --rm [K[K[Kname nginx [K1[K[K[K[K[K[Ktest1 ngin[K[K[K[Knginx:1.24.0[C nginx:1.24.0- nginx:1.24.0d nginx:1.24.0[C nginx:1.24.0
+038b237ec7fd3650ec563e8c04dea586df12f5cca1a539559b703a617b704aee
+(default) %m%# docker co[K[Kexec -it test1 bash
+[?2004hroot@038b237ec7fd:/# apt ud pdate && apt install [7miputils-ping[27miputils-ping -y
+[?2004l
+[33m
+0% [Working][0m
+            
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+[33m
+0% [1 InRelease 7060 B/116 kB 6%][0m[33m
+                                 
+0% [Working][0m
+            
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+[33m
+0% [2 InRelease 10.6 kB/48.4 kB 22%][0m[33m
+                                    
+0% [Waiting for headers][0m
+                        
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+[33m
+0% [3 InRelease 12.1 kB/44.1 kB 27%][0m[33m
+                                    
+0% [Working][0m[33m
+0% [Working][0m
+            
+Get:4 http://deb.debian.org/debian bullseye/main arm64 Packages [7951 kB]
+[33m
+0% [4 Packages 7060 B/7951 kB 0%][0m[33m
+0% [4 Packages 514 kB/7951 kB 6%][0m[33m
+26% [4 Packages 1101 kB/7951 kB 14%][0m[33m
+64% [4 Packages 5161 kB/7951 kB 65%][0m[33m
+                                    
+91% [Working][0m[33m
+91% [4 Packages store 0 B] [Waiting for headers][0m
+                                                
+Get:5 http://deb.debian.org/debian-security bullseye-security/main arm64 Packages [253 kB]
+[33m
+91% [4 Packages store 0 B] [5 Packages 8472 B/253 kB 3%][0m[33m
+                                                        
+93% [4 Packages store 0 B] [Waiting for headers][0m
+                                                
+Get:6 http://deb.debian.org/debian bullseye-updates/main arm64 Packages [14.9 kB]
+[33m
+93% [4 Packages store 0 B] [6 Packages 609 B/14.9 kB 4%][0m[33m
+                                                        
+93% [4 Packages store 0 B][0m[33m
+93% [4 Packages store 0 B][0m[33m
+                          
+96% [Working][0m[33m
+96% [5 Packages store 0 B][0m[33m
+                          
+98% [Working][0m[33m
+98% [6 Packages store 0 B][0m[33m
+                          
+100% [Working][0m
+              
+Fetched 8428 kB in 2s (4645 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+All packages are up to date.
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+The following additional packages will be installed:
+  libcap2 libcap2-bin libpam-cap
+The following NEW packages will be installed:
+  iputils-ping libcap2 libcap2-bin libpam-cap
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 119 kB of archives.
+After this operation, 315 kB of additional disk space will be used.
+[33m
+0% [Working][0m
+            
+Get:1 http://deb.debian.org/debian bullseye/main arm64 libcap2 arm64 1:2.44-1 [23.2 kB]
+[33m
+2% [1 libcap2 2824 B/23.2 kB 12%][0m[33m
+                                 
+21% [Working][0m
+             
+Get:2 http://deb.debian.org/debian bullseye/main arm64 libcap2-bin arm64 1:2.44-1 [32.0 kB]
+[33m
+25% [2 libcap2-bin 7060 B/32.0 kB 22%][0m[33m
+                                      
+47% [Waiting for headers][0m
+                         
+Get:3 http://deb.debian.org/debian bullseye/main arm64 iputils-ping arm64 3:20210202-1 [48.3 kB]
+[33m
+49% [3 iputils-ping 3552 B/48.3 kB 7%][0m[33m
+                                      
+85% [Waiting for headers][0m
+                         
+Get:4 http://deb.debian.org/debian bullseye/main arm64 libpam-cap arm64 1:2.44-1 [15.5 kB]
+[33m
+91% [4 libpam-cap 9649 B/15.5 kB 62%][0m[33m
+                                     
+100% [Working][0m
+              
+Fetched 119 kB in 0s (1429 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;14r8[1ASelecting previously unselected package libcap2:arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7818 files and directories currently installed.)
+Preparing to unpack .../libcap2_1%3a2.44-1_arm64.deb ...
+7[15;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................................................................................] 87[15;0f[42m[30mProgress: [  6%][49m[39m [#########.............................................................................................................................................................] 8Unpacking libcap2:arm64 (1:2.44-1) ...
+7[15;0f[42m[30mProgress: [ 12%][49m[39m [###################...................................................................................................................................................] 8Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../libcap2-bin_1%3a2.44-1_arm64.deb ...
+7[15;0f[42m[30mProgress: [ 18%][49m[39m [#############################.........................................................................................................................................] 8Unpacking libcap2-bin (1:2.44-1) ...
+7[15;0f[42m[30mProgress: [ 24%][49m[39m [#######################################...............................................................................................................................] 8Selecting previously unselected package iputils-ping.
+Preparing to unpack .../iputils-ping_3%3a20210202-1_arm64.deb ...
+7[15;0f[42m[30mProgress: [ 29%][49m[39m [################################################......................................................................................................................] 8Unpacking iputils-ping (3:20210202-1) ...
+7[15;0f[42m[30mProgress: [ 35%][49m[39m [##########################################################............................................................................................................] 8Selecting previously unselected package libpam-cap:arm64.
+Preparing to unpack .../libpam-cap_1%3a2.44-1_arm64.deb ...
+7[15;0f[42m[30mProgress: [ 41%][49m[39m [####################################################################..................................................................................................] 8Unpacking libpam-cap:arm64 (1:2.44-1) ...
+7[15;0f[42m[30mProgress: [ 47%][49m[39m [##############################################################################........................................................................................] 8Setting up libcap2:arm64 (1:2.44-1) ...
+7[15;0f[42m[30mProgress: [ 53%][49m[39m [#######################################################################################...............................................................................] 87[15;0f[42m[30mProgress: [ 59%][49m[39m [#################################################################################################.....................................................................] 8Setting up libcap2-bin (1:2.44-1) ...
+7[15;0f[42m[30mProgress: [ 65%][49m[39m [###########################################################################################################...........................................................] 87[15;0f[42m[30mProgress: [ 71%][49m[39m [#####################################################################################################################.................................................] 8Setting up libpam-cap:arm64 (1:2.44-1) ...
+7[15;0f[42m[30mProgress: [ 76%][49m[39m [##############################################################################################################################........................................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.32.1 /usr/local/share/perl/5.32.1 /usr/lib/aarch64-linux-gnu/perl5/5.32 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.32 /usr/share/perl/5.32 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+7[15;0f[42m[30mProgress: [ 82%][49m[39m [########################################################################################################################################..............................] 8Setting up iputils-ping (3:20210202-1) ...
+7[15;0f[42m[30mProgress: [ 88%][49m[39m [##################################################################################################################################################....................] 87[15;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################################################################################..........] 8Processing triggers for libc-bin (2.31-13+deb11u7) ...
+
+7[0;15r8[1A[J[?2004hroot@038b237ec7fd:/# exit
+[?2004l
+exit
+(default) %m%# docker exec -it test1 bashcontainer run --name test1 -d  nginx:1.24.0
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdocker image inspect test:commited
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17@container commit nginxcommited[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pexec -it nginxcommited bash
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccontainer commit nginxcommited test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commited[1P test:commitedt test:commitede test:commiteds test:commitedt test:commited1 test:commited[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+sha256:a2c44e32b8953abe505782f90ca437170a46c4511c53d37c8dad5d1d903a40b9
+(default) %m%# docker image inspect test:commited
+[
+    {
+        "Id": "sha256:a2c44e32b8953abe505782f90ca437170a46c4511c53d37c8dad5d1d903a40b9",
+        "RepoTags": [
+            "test:commited"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:718aa43999f514545e0a26fbed82ad73aa80c1ff9595d3a4ef7767a34144a92c",
+        "Comment": "",
+        "Created": "2023-11-11T16:40:52.501361755Z",
+        "Container": "038b237ec7fd3650ec563e8c04dea586df12f5cca1a539559b703a617b704aee",
+        "ContainerConfig": {
+            "Hostname": "038b237ec7fd",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.24.0",
+                "NJS_VERSION=0.7.12",
+                "PKG_RELEASE=1~bullseye"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx:1.24.0",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "DockerVersion": "24.0.5",
+        "Author": "",
+        "Config": {
+            "Hostname": "038b237ec7fd",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.24.0",
+                "NJS_VERSION=0.7.12",
+                "PKG_RELEASE=1~bullseye"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx:1.24.0",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "Architecture": "arm64",
+        "Variant": "v8",
+        "Os": "linux",
+        "Size": 155183836,
+        "VirtualSize": 155183836,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/7d429da8faf13a6fc13835b54333699472042bd25c842c53bedc9927e5aa30f9/diff:/var/lib/docker/overlay2/f6f0168d04ae2e333589e05050ad8733c1d326daff40c6546c6c8edb7f5378a6/diff:/var/lib/docker/overlay2/529438f8eff3d80786a64795b7cc2dbc981cb82c44cbf3c9e6398edbeb6e0c5e/diff:/var/lib/docker/overlay2/593794386f641d597c15d77555f24f8c50092d9834f06bdec572d5adde608ec0/diff:/var/lib/docker/overlay2/3ba84ac596a2146a00efa1eea341401e4b1519711a34548871273a75f02f7ccc/diff:/var/lib/docker/overlay2/de4b3f372eeea369a90a13445f8953357dfc779b79ed03b5b68bae042cb9de01/diff",
+                "MergedDir": "/var/lib/docker/overlay2/0fb01fddc31519d364ed9ad56c70aef11f1d67f4666d97ee184a2e2dbb1dc49e/merged",
+                "UpperDir": "/var/lib/docker/overlay2/0fb01fddc31519d364ed9ad56c70aef11f1d67f4666d97ee184a2e2dbb1dc49e/diff",
+                "WorkDir": "/var/lib/docker/overlay2/0fb01fddc31519d364ed9ad56c70aef11f1d67f4666d97ee184a2e2dbb1dc49e/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:60df532890c9cca1c175cfea286e7bc7d79a2f79592acaacf5fefc399ea9c569",
+                "sha256:9e62d2f7503319e6a4666cf08eaac37fc75adb9cf201b29871ea92a43d98784c",
+                "sha256:e76db52dd828ed636a4ab80e675bc36b24b0f0bea22edbe6fa33e8f426325f98",
+                "sha256:91895f02979d50fda82ac00a9d9be429adfaef7b37ee97f58795a93d7b391dd1",
+                "sha256:84c5c4a958a6fb2e1886c341fcd0e3c5a434e8c1c1162c239af2716521e617ce",
+                "sha256:9fa2c6c0889f9e16a7cc88a6a88bc140db0668140ec49e23f99df956d1d46ff9",
+                "sha256:7454cc51ce39fbe5763a3c7ff15b256bd271121ae4e92c0784e417d781d20142"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2023-11-11T16:40:52.503354589Z"
+        }
+    }
+]
+(default) %m%# exit
+exit
+
+Script done on Sat Nov 11 17:41:07 2023
